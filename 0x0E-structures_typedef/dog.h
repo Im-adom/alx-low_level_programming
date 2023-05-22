@@ -1,11 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * struct dog-This dog's little information.
- * @name: first input
- * @age: second input
- * @owner: third input
- * Description: This is the comment to the struct dog.
+ * struct dog - Provides the basic info of a poppy.
+ * @name: First input
+ * @age: Second input
+ * @owner: Third input
  */
 struct dog
 {
@@ -13,5 +12,4 @@ struct dog
 	float age;
 	char *owner;
 }
-
 #endif
