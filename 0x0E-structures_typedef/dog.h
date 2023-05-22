@@ -1,5 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
+
 /**
  * struct dog - Provides the basic info of a poppy.
  * @name: First input
