@@ -1,11 +1,12 @@
-#include <stdlib.h>
-#define __FILE__
+#include <stdio.h>
+
 /**
- * main - Entry point.
+ * main - Prints the name of a file.
+ * Return: 0
  */
-void main(void)
+int  main(void)
 {
-	printf("2-main.c\n");
+	printf("%s\n", __FILE__);
 
 	return (0);
 }
