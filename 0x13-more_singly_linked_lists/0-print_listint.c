@@ -2,18 +2,18 @@
 
 /**
  * print_listint- prints all the elements of a listint_t list
- * @h: the current node
+ * @h: the linked list of type listint_t to print
  * Return: the number of nodes
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t calc;
+	size_t calc = 0;
 
-	while (h != NULL)
+	while (h)
 	{
 		printf("%d\n", h->n);
-		h = h->next;
 		calc++;
+		h = h->next;
 	}
 	return (calc);
 }
