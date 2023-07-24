@@ -1,22 +1,23 @@
 #include <unistd.h>
 #include <string.h>
 
-int rand()
+int rand(void)
 {
 	static int v = -1;
 
 	v++;
+
 	if (v == 0)
-		return 8;
+		return (8);
 	if (v == 1)
-		return 8;
+		return (8);
 	if (v == 2)
-		return 7;
+		return (7);
 	if (v == 3)
-		return 9;
+		return (9);
 	if (v == 4)
-		return 23;
+		return (23);
 	if (v == 5)
-		return 74;
-	return v * v % 30000;
+		return (74);
+	return (v * v % 30000);
 }
